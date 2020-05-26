@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --head-color: #061539;
+    --primary-color: #DBDBDB;
+    --secondary-color: #ECECEC;
+    --third-color: white;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Mukta', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+thead {
+    color: var(--third-color);
+    text-align: center;
+    font-size: 1.4em;
+}
+
+thead > tr > th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+thead > tr > th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+thead > tr > th:nth-child(5n+1) {
+    opacity: 0.6;
+}
+
+thead > tr > th:nth-child(5n+2) {
+    opacity: 0.7;
+}
+
+thead > tr > th:nth-child(5n+3) {
+    opacity: 0.8;
+}
+
+thead > tr > th:nth-child(5n+4) {
+    opacity: 0.9;
+}
+
+thead > tr > th:nth-child(5n+5) {
+    opacity: 1;
+}
+
+th {
+    background-color: var(--head-color);
+}
+
+th > p:nth-child(3n+1) {
+    padding: 1em;
+}
+
+th > p:nth-child(3n+2) {
+    font-size: 2em;
+    padding-top: 2rem;
+}
+
+th > p:nth-child(3n+3) {
+    padding: 1em 2em 1em 2em;
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(odd) {
+    background-color: var(--primary-color);
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+tbody > tr:nth-child(even) > td:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+tbody > tr:nth-child(even) > td:nth-child(even) {
+    background-color: var(--third-color);
+}
+
+tbody > tr > td:first-child {
+    padding: 1em 0.5em;
+}
+
+tbody td + td {
+    text-align: center;
+}
+
+tfoot {
+    text-align: center;
+}
+
+tfoot > tr:nth-child(odd) > td:nth-child(odd) {
+    background-color: var(--primary-color);
+}
+
+tfoot > tr:nth-child(odd) > td:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+tfoot > tr > td:first-child {
+    border-radius: 0 0 0 10px;
+    padding-left: 1em;
+}
+
+tfoot > tr > td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+tfoot > tr > td {
+    padding: 1em;
+}
+
+button {
+    color: #5E6A82;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    border: 1px solid #ABABAB;
+    background-color: #D3D3D3;
+}
+
